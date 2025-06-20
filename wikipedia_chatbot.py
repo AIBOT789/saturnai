@@ -111,7 +111,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown("<h1 style='color:#fff;text-align:center;'>Saturn</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='color:#fff;text-align:center;'>Neptune AI</h1>", unsafe_allow_html=True)
 st.markdown("<p style='color:#fff;text-align:center;'>Ask me anything! I'll fetch the answer from Wikipedia or suggest YouTube videos.</p>", unsafe_allow_html=True)
 
 # Session state for chat history
