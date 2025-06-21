@@ -5,7 +5,7 @@ import streamlit as st
 import os
 
 # Check the current URL path (only works in deployed apps)
-query_params = st.experimental_get_query_params()
+query_params = st.query_params.
 
 # Check if user manually visits the verification path
 if st.experimental_get_query_params().get("page") == ["google7f4ca9cf3131dcab.html"]:
