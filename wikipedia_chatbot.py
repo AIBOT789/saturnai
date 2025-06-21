@@ -1,3 +1,21 @@
+
+import streamlit.components.v1 as components
+# Google Analytics integration
+components.html(
+    """
+    <!-- Google Analytics -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=G-QJ9RY025XV'></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QJ9RY025XV');
+    </script>
+    """,
+    height=0,
+    width=0
+)
+
 import streamlit as st
 import wikipedia
 from wikipedia.exceptions import DisambiguationError, PageError
