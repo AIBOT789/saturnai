@@ -8,10 +8,21 @@ import requests
 import time
 from textblob import TextBlob
 
-# Inject Google Search Console verification meta tag
-components.html("""
-    <meta name='google-site-verification' content='I1AJnd-tXXIn3m0FHDwkT3LHNyrCZGRnsIpKhGO22sQ' />
-""", height=0)
+# Google Analytics integration for Search Console verification
+components.html(
+    """
+    <!-- Google Analytics -->
+    <script async src='https://www.googletagmanager.com/gtag/js?id=G-QJ9RY025XV'></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-QJ9RY025XV');
+    </script>
+    """,
+    height=0,
+    width=0
+)
 
 YOUTUBE_API_KEY = "AIzaSyALoTMUXxQaWVIB6PW4-YJeNuxOtlaNT6Y"
 YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
