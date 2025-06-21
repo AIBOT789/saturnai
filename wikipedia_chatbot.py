@@ -1,29 +1,17 @@
 import streamlit as st
 import streamlit.components.v1 as components
-# Inject Google verification meta tag
-import streamlit as st
 import os
-
-# Check the current URL path (only works in deployed apps)
-
-# Your chatbot/app code below
-st.title("Welcome to Sameer AI!")
-st.write("This is your AI assistant.")
-# ...
-import streamlit.components.v1 as components
-
-components.html("""
-    <meta name="google-site-verification" content="I1AJnd-tXXIn3m0FHDwkT3LHNyrCZGRnsIpKhGO22sQ" />
-""", height=0)
-
-
-import streamlit as st
 import wikipedia
 from wikipedia.exceptions import DisambiguationError, PageError
 import re
 import requests
 import time
 from textblob import TextBlob
+
+# Inject Google Search Console verification meta tag
+components.html("""
+    <meta name='google-site-verification' content='I1AJnd-tXXIn3m0FHDwkT3LHNyrCZGRnsIpKhGO22sQ' />
+""", height=0)
 
 YOUTUBE_API_KEY = "AIzaSyALoTMUXxQaWVIB6PW4-YJeNuxOtlaNT6Y"
 YOUTUBE_SEARCH_URL = "https://www.googleapis.com/youtube/v3/search"
