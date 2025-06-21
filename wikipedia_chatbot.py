@@ -1,5 +1,5 @@
+import streamlit as st
 import streamlit.components.v1 as components
-
 # Inject Google verification meta tag
 components.html("""
     <meta name="google-site-verification" content="I1AJnd-tXXIn3m0FHDwkT3LHNyrCZGRnsIpKhGO22sQ" />
