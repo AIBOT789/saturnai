@@ -1,3 +1,14 @@
+import streamlit as st
+
+st.set_page_config(page_title="Sameer AI", layout="centered")
+
+# 👇 Verification string for Google Search Console
+st.text("google-site-verification: google7f4ca9cf3131dcab.html")
+
+# Your chatbot/app code below
+st.title("Welcome to Sameer AI!")
+st.write("This is your AI assistant.")
+# ...
 
 import streamlit.components.v1 as components
 # Google Analytics integration
