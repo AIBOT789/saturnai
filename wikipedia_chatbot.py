@@ -3,7 +3,12 @@ import streamlit as st
 st.set_page_config(page_title="Sameer AI", layout="centered")
 
 # 👇 Verification string for Google Search Console
+# Show verification string for HTML file method
 st.text("google-site-verification: google7f4ca9cf3131dcab.html")
+
+# Show verification string for meta tag method
+st.text("google-site-verification: 7f4ca9cf3131dcab")
+
 
 # Your chatbot/app code below
 st.title("Welcome to Sameer AI!")
