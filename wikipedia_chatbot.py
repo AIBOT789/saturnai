@@ -1,13 +1,10 @@
 import streamlit as st
+import streamlit.components.v1 as components
 
-st.set_page_config(page_title="Sameer AI", layout="centered")
-
-# 👇 Verification string for Google Search Console
-# Show verification string for HTML file method
-st.text("google-site-verification: google7f4ca9cf3131dcab.html")
-
-# Show verification string for meta tag method
-st.text("google-site-verification: 7f4ca9cf3131dcab")
+# Inject meta tag for Google Search Console
+components.html("""
+    <meta name="google-site-verification" content="I1AJnd-tXXIn3m0FHDwkT3LHNyrCZGRnsIpKhGO22sQ" />
+""", height=0)
 
 
 # Your chatbot/app code below
